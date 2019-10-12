@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    //MARK: Properties
+    // MARK: Properties
     
     //Establish Tip Amount
     var tipPercent = Double(0.0)
@@ -37,17 +37,20 @@ class ViewController: UIViewController {
         percentPressed = true
     }
     
-    //Establish Bill Amount
+    // Establish Bill Amount
     @IBOutlet weak var amountOfBill: UITextField!
     
-    //Establish Amount of People
+    // Establish Amount of People
     @IBOutlet weak var amountOfPeople: UITextField!
     
-    //Total Tip Label
+    // Total Tip Label
     @IBOutlet weak var totalTipLabel: UILabel!
     
-    //Tip Per Person Label
+    // Tip Per Person Label
     @IBOutlet weak var tipPerPersonLabel: UILabel!
+    
+    // Title Label
+    @IBOutlet weak var titleLabel: UILabel!
     
     
     //MARK: Methods
@@ -60,27 +63,34 @@ class ViewController: UIViewController {
     
     @IBAction func calculate(_ sender: Any) {
         
-        // Decided percent
-        
         // Take text field and turn them into strings
         
         if percentPressed == false {
+            titleLabel.text = "Enter All Values"
             return
         }
-        guard let billAmountAsString = amountOfBill.text else {
+        guard let billAmountAsString = amountOfBill.text, amountOfBill.text != "" else {
+            titleLabel.text = "Enter All Values"
             return
         }
-        guard let amountOfPeopleAsString = amountOfPeople.text else{
+        guard let amountOfPeopleAsString = amountOfPeople.text, amountOfPeople.text != "" else{
+            titleLabel.text = "Enter All Values"
             return
         }
         
         // Take strings and turn them into doubles
         guard let billAmountAsDouble = Double(billAmountAsString) else{
+            
             return
         }
+        
         guard let amountOfPeopleAsDouble = Double(amountOfPeopleAsString) else{
+            
             return
         }
+        
+        // Set Title Back
+        titleLabel.text = "Tip Calculator"
         
         // Calculate tip amount
         let tipAmountInDollars = billAmountAsDouble * tipPercent

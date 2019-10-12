@@ -15,8 +15,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tip Calculator" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R9T-V8-808">
-                                <rect key="frame" x="71" y="85" width="232" height="47"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tip Calculator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R9T-V8-808">
+                                <rect key="frame" x="0.0" y="85" width="375" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="39"/>
                                 <nil key="textColor"/>
@@ -122,6 +122,7 @@
                         <outlet property="amountOfBill" destination="Frg-j2-9X2" id="NsK-9H-W9x"/>
                         <outlet property="amountOfPeople" destination="ccN-v5-wGN" id="jPe-EP-DUK"/>
                         <outlet property="tipPerPersonLabel" destination="x0P-rR-Lkb" id="Cfu-TG-AFP"/>
+                        <outlet property="titleLabel" destination="R9T-V8-808" id="4gJ-Nx-TtQ"/>
                         <outlet property="totalTipLabel" destination="19H-Gq-VM3" id="Vb2-px-eK4"/>
                     </connections>
                 </viewController>
