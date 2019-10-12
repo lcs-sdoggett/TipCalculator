@@ -39,7 +39,6 @@ class ViewController: UIViewController {
     
     //Tip Percentage Buttona (chose what percent to apply)
     
-    
     @IBAction func button5P(_ sender: Any) {
         tipPercent = 0.05
     }
