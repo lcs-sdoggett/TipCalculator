@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     //MARK: Properties
     
     //Establish Tip Amount
-    var tipPercent = 0.0
+    var tipPercent = Double(0.0)
     
     @IBAction func tip5(_ sender: Any) {
         tipPercent = 0.05
@@ -57,12 +57,20 @@ class ViewController: UIViewController {
         // Decided percent
         
         // Take text field and turn them into strings
-        let billAmountAsString = amountOfBill.text!
-        let amountOfPeopleAsString = amountOfPeople.text!
+        guard let billAmountAsString = amountOfBill.text else {
+            return
+        }
+        guard let amountOfPeopleAsString = amountOfPeople.text else{
+            return
+        }
         
         // Take strings and turn them into doubles
-        let billAmountAsDouble = Double(billAmountAsString)!
-        let amountOfPeopleAsDouble = Double(amountOfPeopleAsString)!
+        guard let billAmountAsDouble = Double(billAmountAsString) else{
+            return
+        }
+        guard let amountOfPeopleAsDouble = Double(amountOfPeopleAsString) else{
+            return
+        }
         
         // Calculate tip amount
         let tipAmountInDollars = billAmountAsDouble * tipPercent
