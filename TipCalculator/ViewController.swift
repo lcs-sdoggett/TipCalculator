@@ -15,20 +15,26 @@ class ViewController: UIViewController {
     //Establish Tip Amount
     var tipPercent = Double(0.0)
     
+    var percentPressed = false
+    
     @IBAction func tip5(_ sender: Any) {
         tipPercent = 0.05
+        percentPressed = true
     }
     
     @IBAction func tip10(_ sender: Any) {
         tipPercent = 0.1
+        percentPressed = true
     }
     
     @IBAction func tip15(_ sender: Any) {
         tipPercent = 0.15
+        percentPressed = true
     }
     
     @IBAction func tip20(_ sender: Any) {
        tipPercent = 0.2
+        percentPressed = true
     }
     
     //Establish Bill Amount
@@ -57,6 +63,10 @@ class ViewController: UIViewController {
         // Decided percent
         
         // Take text field and turn them into strings
+        
+        if percentPressed == false {
+            return
+        }
         guard let billAmountAsString = amountOfBill.text else {
             return
         }
