@@ -100,6 +100,7 @@
                         <outlet property="billAmount" destination="Frg-j2-9X2" id="o5W-hd-wUS"/>
                         <outlet property="tipAmount" destination="njf-Ki-Ix4" id="3mH-sK-LbL"/>
                         <outlet property="tipPerPersonLable" destination="x0P-rR-Lkb" id="22r-9t-k2F"/>
+                        <outlet property="tipPercent" destination="njf-Ki-Ix4" id="nZx-ht-pKf"/>
                         <outlet property="totalTipLable" destination="19H-Gq-VM3" id="ldN-AE-hn2"/>
                     </connections>
                 </viewController>
