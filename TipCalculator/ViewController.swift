@@ -15,8 +15,8 @@ class ViewController: UIViewController {
     //Establish Bill Amount
     @IBOutlet weak var billAmount: UITextField!
     
-    //Establish Tip Amount
-    @IBOutlet weak var tipAmount: UITextField!
+    //Establish Tip Percent
+    @IBOutlet weak var tipPercent: UITextField!
     
     //Establish Amount of People
     @IBOutlet weak var amountOfPeople: UITextField!
@@ -26,18 +26,36 @@ class ViewController: UIViewController {
     
     //Tip Per Person Label
     @IBOutlet weak var tipPerPersonLable: UILabel!
- 
-    
-    //Establish Tip Percent Variable
-    var tipPercent = 0.0
     
     //MARK: Methods
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func calculate(_ sender: Any) {
+        
+        // Take text field and turn them into strings
+        let billAmountAsString = billAmount.text!
+        let tipPercentAsString = tipPercent.text!
+        let amountOfPeopleAsString = amountOfPeople.text!
+        
+        // Take strings and turn them into doubles
+        let billAmountAsDouble = Double(billAmountAsString)!
+        let tipPercentAsDouble = Double(tipPercentAsString)!
+        let amountOfPeopleAsDouble = Double(amountOfPeopleAsString)!
+        
+        // Divide tip by 100 to get decimal
+        let tipPercentageAsDoubleDivided = tipPercentAsDouble/100
+        
+        // Calculate tip amount
+        let tipAmountInDollars = billAmountAsDouble * tipPercentageAsDoubleDivided
+
+
+        
+    }
     
 }
 

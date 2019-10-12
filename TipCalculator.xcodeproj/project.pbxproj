@@ -61,10 +61,10 @@
 				7DB5F3742350D56F009577FD /* SceneDelegate.swift */,
 				7DB5F3762350D56F009577FD /* ViewController.swift */,
 				7DB5F3782350D56F009577FD /* Main.storyboard */,
+				7DE3D960235218F000A6532B /* TipCalculatorPlayground.playground */,
 				7DB5F37B2350D576009577FD /* Assets.xcassets */,
 				7DB5F37D2350D576009577FD /* LaunchScreen.storyboard */,
 				7DB5F3802350D576009577FD /* Info.plist */,
-				7DE3D960235218F000A6532B /* TipCalculatorPlayground.playground */,
 			);
 			path = TipCalculator;
 			sourceTree = "<group>";
