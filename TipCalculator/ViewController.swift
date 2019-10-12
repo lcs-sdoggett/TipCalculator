@@ -18,13 +18,12 @@ class ViewController: UIViewController {
     //Establish Tip Percent
     @IBOutlet weak var tipPercent: UITextField!
     
-    
     //Establish Amount of People
     @IBOutlet weak var amountOfPeople: UITextField!
     
-    
     //Total Tip Label
     @IBOutlet weak var totalTipLabel: UILabel!
+    
     
     //Tip Per Person Label
     @IBOutlet weak var tipPerPersonLabel: UILabel!
@@ -55,6 +54,26 @@ class ViewController: UIViewController {
         
         // Calculate tip amount
         let tipAmountInDollars = billAmountAsDouble * tipPercentageAsDoubleDivided
+        
+        // Change tip amount into a string
+        let tipAmountInDollarsasString = String(tipAmountInDollars)
+        
+        // Share information to the user interface
+        totalTipLabel.text = "Total Tip: \(tipAmountInDollarsasString)$"
+        
+        // Calculate tip per person
+        let tipAmountPerPerson = tipAmountInDollars / amountOfPeopleAsDouble
+        
+        // Change tip per person into a string
+        let tipPerPersonasString = String(tipAmountPerPerson)
+        
+         // Share information to the user interface
+        tipPerPersonLabel.text = "Tip Per Person: \(tipPerPersonasString)$"
+
+
+        
+        
+        
 
 
         
