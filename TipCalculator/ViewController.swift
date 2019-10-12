@@ -33,7 +33,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func tip20(_ sender: Any) {
-       tipPercent = 0.2
+        tipPercent = 0.2
         percentPressed = true
     }
     
@@ -54,7 +54,7 @@ class ViewController: UIViewController {
     
     
     //MARK: Methods
-
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -113,9 +113,9 @@ class ViewController: UIViewController {
         // Change tip per person into a string
         let tipPerPersonasString = String(roundedTipPerPerson)
         
-         // Share information to the user interface
+        // Share information to the user interface
         tipPerPersonLabel.text = "Tip Per Person: \(tipPerPersonasString)$"
-
+        
         
     }
     
