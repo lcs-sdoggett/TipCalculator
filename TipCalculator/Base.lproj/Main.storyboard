@@ -96,12 +96,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="amountOfPeople" destination="ccN-v5-wGN" id="jyr-CU-1gV"/>
-                        <outlet property="billAmount" destination="Frg-j2-9X2" id="o5W-hd-wUS"/>
-                        <outlet property="tipAmount" destination="njf-Ki-Ix4" id="3mH-sK-LbL"/>
-                        <outlet property="tipPerPersonLable" destination="x0P-rR-Lkb" id="22r-9t-k2F"/>
-                        <outlet property="tipPercent" destination="njf-Ki-Ix4" id="nZx-ht-pKf"/>
-                        <outlet property="totalTipLable" destination="19H-Gq-VM3" id="ldN-AE-hn2"/>
+                        <outlet property="amountOfBill" destination="Frg-j2-9X2" id="NsK-9H-W9x"/>
+                        <outlet property="amountOfPeople" destination="ccN-v5-wGN" id="jPe-EP-DUK"/>
+                        <outlet property="tipPerPersonLabel" destination="x0P-rR-Lkb" id="Cfu-TG-AFP"/>
+                        <outlet property="tipPercent" destination="njf-Ki-Ix4" id="2mF-VP-btu"/>
+                        <outlet property="totalTipLabel" destination="19H-Gq-VM3" id="Vb2-px-eK4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

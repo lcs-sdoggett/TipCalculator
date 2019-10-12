@@ -13,19 +13,22 @@ class ViewController: UIViewController {
     //MARK: Properties
     
     //Establish Bill Amount
-    @IBOutlet weak var billAmount: UITextField!
+    @IBOutlet weak var amountOfBill: UITextField!
     
     //Establish Tip Percent
     @IBOutlet weak var tipPercent: UITextField!
     
+    
     //Establish Amount of People
     @IBOutlet weak var amountOfPeople: UITextField!
     
+    
     //Total Tip Label
-    @IBOutlet weak var totalTipLable: UILabel!
+    @IBOutlet weak var totalTipLabel: UILabel!
     
     //Tip Per Person Label
-    @IBOutlet weak var tipPerPersonLable: UILabel!
+    @IBOutlet weak var tipPerPersonLabel: UILabel!
+    
     
     //MARK: Methods
 
@@ -38,7 +41,7 @@ class ViewController: UIViewController {
     @IBAction func calculate(_ sender: Any) {
         
         // Take text field and turn them into strings
-        let billAmountAsString = billAmount.text!
+        let billAmountAsString = amountOfBill.text!
         let tipPercentAsString = tipPercent.text!
         let amountOfPeopleAsString = amountOfPeople.text!
         
