@@ -12,18 +12,33 @@ class ViewController: UIViewController {
     
     //MARK: Properties
     
+    //Establish Tip Amount
+    var tipPercent = 0.0
+    
+    @IBAction func tip5(_ sender: Any) {
+        tipPercent = 0.05
+    }
+    
+    @IBAction func tip10(_ sender: Any) {
+        tipPercent = 0.1
+    }
+    
+    @IBAction func tip15(_ sender: Any) {
+        tipPercent = 0.15
+    }
+    
+    @IBAction func tip20(_ sender: Any) {
+       tipPercent = 0.2
+    }
+    
     //Establish Bill Amount
     @IBOutlet weak var amountOfBill: UITextField!
-    
-    //Establish Tip Percent
-    @IBOutlet weak var tipPercent: UITextField!
     
     //Establish Amount of People
     @IBOutlet weak var amountOfPeople: UITextField!
     
     //Total Tip Label
     @IBOutlet weak var totalTipLabel: UILabel!
-    
     
     //Tip Per Person Label
     @IBOutlet weak var tipPerPersonLabel: UILabel!
@@ -39,21 +54,18 @@ class ViewController: UIViewController {
     
     @IBAction func calculate(_ sender: Any) {
         
+        // Decided percent
+        
         // Take text field and turn them into strings
         let billAmountAsString = amountOfBill.text!
-        let tipPercentAsString = tipPercent.text!
         let amountOfPeopleAsString = amountOfPeople.text!
         
         // Take strings and turn them into doubles
         let billAmountAsDouble = Double(billAmountAsString)!
-        let tipPercentAsDouble = Double(tipPercentAsString)!
         let amountOfPeopleAsDouble = Double(amountOfPeopleAsString)!
         
-        // Divide tip by 100 to get decimal
-        let tipPercentageAsDoubleDivided = tipPercentAsDouble/100
-        
         // Calculate tip amount
-        let tipAmountInDollars = billAmountAsDouble * tipPercentageAsDoubleDivided
+        let tipAmountInDollars = billAmountAsDouble * tipPercent
         
         // Round the value to 2 decimal places
         let roundedtipAmountInDollars = (round(100*tipAmountInDollars)/100)

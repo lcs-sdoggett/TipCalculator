@@ -16,81 +16,104 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tip Calculator" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R9T-V8-808">
-                                <rect key="frame" x="71" y="63" width="232" height="47"/>
+                                <rect key="frame" x="71" y="85" width="232" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="39"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Amount of Bill:$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dhm-tU-BxM">
-                                <rect key="frame" x="44" y="175" width="172" height="30"/>
+                                <rect key="frame" x="44" y="195" width="172" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Split Between How Many People?:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zgh-wj-bUg">
-                                <rect key="frame" x="69" y="375" width="236" height="90"/>
+                                <rect key="frame" x="70" y="282" width="236" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tip Percent:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Rf-zn-A9s">
-                                <rect key="frame" x="59" y="272" width="129" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lv7-Bg-QWs">
-                                <rect key="frame" x="296" y="272" width="20" height="30"/>
+                                <rect key="frame" x="124" y="444" width="129" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="100.25" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Frg-j2-9X2">
-                                <rect key="frame" x="224" y="173" width="108" height="34"/>
+                                <rect key="frame" x="224" y="193" width="108" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="15" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="njf-Ki-Ix4">
-                                <rect key="frame" x="196" y="270" width="92" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                            </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="3" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ccN-v5-wGN">
-                                <rect key="frame" x="80" y="463" width="215" height="34"/>
+                                <rect key="frame" x="81" y="370" width="215" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total Tip:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="19H-Gq-VM3">
-                                <rect key="frame" x="40" y="634" width="294" height="43"/>
+                                <rect key="frame" x="40" y="639" width="294" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d4x-GE-Mcl">
-                                <rect key="frame" x="124" y="547" width="129" height="51"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tip Per Person:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x0P-rR-Lkb">
+                                <rect key="frame" x="41" y="690" width="294" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <state key="normal" title="Calculate"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EPu-3B-cXo">
+                                <rect key="frame" x="41" y="482" width="42" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="5%"/>
                                 <connections>
-                                    <action selector="calculate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ayQ-zd-a7I"/>
+                                    <action selector="tip5:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UxL-Vz-mqz"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tip Per Person:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x0P-rR-Lkb">
-                                <rect key="frame" x="41" y="685" width="294" height="43"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sfO-hG-3BX">
+                                <rect key="frame" x="116" y="482" width="57" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="10%"/>
+                                <connections>
+                                    <action selector="tip10:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Aj-rK-Hwc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bbJ-NB-Jo9">
+                                <rect key="frame" x="202" y="482" width="56" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="15%"/>
+                                <connections>
+                                    <action selector="tip15:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PXJ-fQ-ZeV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fsE-Rf-vCS">
+                                <rect key="frame" x="275" y="482" width="60" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="20%"/>
+                                <connections>
+                                    <action selector="tip20:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GvM-7Z-CgM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WDF-nl-3x6">
+                                <rect key="frame" x="126" y="566" width="122" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Calculate"/>
+                                <connections>
+                                    <action selector="calculate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KRg-M2-HCV"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -99,7 +122,6 @@
                         <outlet property="amountOfBill" destination="Frg-j2-9X2" id="NsK-9H-W9x"/>
                         <outlet property="amountOfPeople" destination="ccN-v5-wGN" id="jPe-EP-DUK"/>
                         <outlet property="tipPerPersonLabel" destination="x0P-rR-Lkb" id="Cfu-TG-AFP"/>
-                        <outlet property="tipPercent" destination="njf-Ki-Ix4" id="2mF-VP-btu"/>
                         <outlet property="totalTipLabel" destination="19H-Gq-VM3" id="Vb2-px-eK4"/>
                     </connections>
                 </viewController>
