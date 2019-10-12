@@ -55,26 +55,26 @@ class ViewController: UIViewController {
         // Calculate tip amount
         let tipAmountInDollars = billAmountAsDouble * tipPercentageAsDoubleDivided
         
+        // Round the value to 2 decimal places
+        let roundedtipAmountInDollars = (round(100*tipAmountInDollars)/100)
+        
         // Change tip amount into a string
-        let tipAmountInDollarsasString = String(tipAmountInDollars)
+        let tipAmountInDollarsasString = String(roundedtipAmountInDollars)
         
         // Share information to the user interface
         totalTipLabel.text = "Total Tip: \(tipAmountInDollarsasString)$"
         
         // Calculate tip per person
-        let tipAmountPerPerson = tipAmountInDollars / amountOfPeopleAsDouble
+        let tipAmountPerPerson = tipAmountInDollars/amountOfPeopleAsDouble
+        
+        // Round the value to 2 decimal places
+        let roundedTipPerPerson = (round(100*tipAmountPerPerson)/100)
         
         // Change tip per person into a string
-        let tipPerPersonasString = String(tipAmountPerPerson)
+        let tipPerPersonasString = String(roundedTipPerPerson)
         
          // Share information to the user interface
         tipPerPersonLabel.text = "Tip Per Person: \(tipPerPersonasString)$"
-
-
-        
-        
-        
-
 
         
     }
