@@ -15,6 +15,9 @@ class ViewController: UIViewController {
     //Establish Bill Amount
     @IBOutlet weak var billAmount: UITextField!
     
+    //Establish Tip Amount
+    @IBOutlet weak var tipAmount: UITextField!
+    
     //Establish Amount of People
     @IBOutlet weak var amountOfPeople: UITextField!
     
@@ -23,9 +26,7 @@ class ViewController: UIViewController {
     
     //Tip Per Person Label
     @IBOutlet weak var tipPerPersonLable: UILabel!
-    
-    //Establish Tip Variable
-    var tipAmount = 0.0
+ 
     
     //Establish Tip Percent Variable
     var tipPercent = 0.0
@@ -37,23 +38,6 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    //Tip Percentage Buttona (chose what percent to apply)
-    
-    @IBAction func button5P(_ sender: Any) {
-        tipPercent = 0.05
-    }
-    
-    @IBAction func button10P(_ sender: Any) {
-        tipPercent = 0.10
-    }
-    
-    @IBAction func button15(_ sender: Any) {
-        tipPercent = 0.15
-    }
-    
-    @IBAction func button20(_ sender: Any) {
-        tipPercent = 0.20
-    }
     
 }
 
