@@ -65,27 +65,35 @@ class ViewController: UIViewController {
         
         // Take text field and turn them into strings
         
+        // If any percent button hasn;t been pressed, tell user to pick a value
         if percentPressed == false {
             titleLabel.text = "Enter All Values"
             return
         }
+        
+        // If they haven't entered a string tell the user to enter a value
         guard let billAmountAsString = amountOfBill.text, amountOfBill.text != "" else {
             titleLabel.text = "Enter All Values"
             return
         }
+        
+        // If they haven't entered a string tell the user to enter a value
         guard let amountOfPeopleAsString = amountOfPeople.text, amountOfPeople.text != "" else{
             titleLabel.text = "Enter All Values"
             return
         }
         
         // Take strings and turn them into doubles
+        
+        // If the string can't be converted to a double, diplay message to user
         guard let billAmountAsDouble = Double(billAmountAsString) else{
-            
+            titleLabel.text = "Enter Usable Values"
             return
         }
         
+        // If the string can't be converted to a double, diplay message to user
         guard let amountOfPeopleAsDouble = Double(amountOfPeopleAsString) else{
-            
+            titleLabel.text = "Enter Usable Values"
             return
         }
         

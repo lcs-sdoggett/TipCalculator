@@ -25,4 +25,8 @@ let splitBetweenHowManyPeopleAsDouble = Double(splitBetweenHowManyPeopleAsString
 let tipPercentageAsDoubleDivided = tipPercentageAsDouble/100
 let tipAmountInDollars = billAmountAsDouble * tipPercentageAsDoubleDivided
 
+var number = 12.9
+number = round(number)
+print(number)
+
 
