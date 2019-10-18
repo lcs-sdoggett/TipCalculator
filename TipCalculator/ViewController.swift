@@ -17,26 +17,6 @@ class ViewController: UIViewController {
     
     var percentPressed = false
     
-    @IBAction func tip5(_ sender: Any) {
-        tipPercent = 0.05
-        percentPressed = true
-    }
-    
-    @IBAction func tip10(_ sender: Any) {
-        tipPercent = 0.1
-        percentPressed = true
-    }
-    
-    @IBAction func tip15(_ sender: Any) {
-        tipPercent = 0.15
-        percentPressed = true
-    }
-    
-    @IBAction func tip20(_ sender: Any) {
-        tipPercent = 0.2
-        percentPressed = true
-    }
-    
     // Establish Bill Amount
     @IBOutlet weak var amountOfBill: UITextField!
     
@@ -126,6 +106,27 @@ class ViewController: UIViewController {
         
         
     }
+    
+    @IBAction func tip5(_ sender: Any) {
+          tipPercent = 0.05
+          percentPressed = true
+      }
+      
+      @IBAction func tip10(_ sender: Any) {
+          tipPercent = 0.1
+          percentPressed = true
+      }
+      
+      @IBAction func tip15(_ sender: Any) {
+          tipPercent = 0.15
+          percentPressed = true
+      }
+      
+      @IBAction func tip20(_ sender: Any) {
+          tipPercent = 0.2
+          percentPressed = true
+      }
+      
     
 }
 
