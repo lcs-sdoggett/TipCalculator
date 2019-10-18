@@ -15,8 +15,6 @@ class ViewController: UIViewController {
     //Establish Tip Amount
     var tipPercent = Double(0.0)
     
-    var percentPressed = false
-    
     // Establish Bill Amount
     @IBOutlet weak var amountOfBill: UITextField!
     
@@ -41,15 +39,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func calculate(_ sender: Any) {
+    func calculate() {
         
         // Take text field and turn them into strings
-        
-        // If any percent button hasn;t been pressed, tell user to pick a value
-        if percentPressed == false {
-            titleLabel.text = "Enter All Values"
-            return
-        }
         
         // If they haven't entered a string tell the user to enter a value
         guard let billAmountAsString = amountOfBill.text, amountOfBill.text != "" else {
@@ -108,23 +100,23 @@ class ViewController: UIViewController {
     }
     
     @IBAction func tip5(_ sender: Any) {
-          tipPercent = 0.05
-          percentPressed = true
+        tipPercent = 0.05
+        calculate()
       }
       
       @IBAction func tip10(_ sender: Any) {
-          tipPercent = 0.1
-          percentPressed = true
+        tipPercent = 0.1
+        calculate()
       }
       
       @IBAction func tip15(_ sender: Any) {
-          tipPercent = 0.15
-          percentPressed = true
+        tipPercent = 0.15
+        calculate()
       }
       
       @IBAction func tip20(_ sender: Any) {
-          tipPercent = 0.2
-          percentPressed = true
+        tipPercent = 0.2
+        calculate()
       }
       
     
